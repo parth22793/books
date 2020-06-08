@@ -153,7 +153,7 @@ def detail(book_id):
     """Goodreads API"""
     # Processing the json data
     res = requests.get("https://www.goodreads.com/book/review_counts.json",
-                       params={"key": "HD8qbAr9QIMZRCGGI5cEkQ", "isbns": book.isbn}).json()["books"][0]
+                       params={"key": "Lp5hDZxJUDOfFnL5yIA2Q", "isbns": book.isbn}).json()["books"][0]
 
     ratings_count = res["ratings_count"]
     average_rating = res["average_rating"]
