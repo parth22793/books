@@ -14,7 +14,8 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Set up database
-engine = create_engine('postgres://dkaqtpactcenex:83d53bd3dbd7cc5006e7d4b42a95ebe7cd5f8bd130dbffe6324179b576158fb6@ec2-54-175-117-212.compute-1.amazonaws.com:5432/d9lj2q8f37fiq4')
+engine = create_engine('postgres://evzazpuapjscve:ae1e41a4f5302a52848eef021e3cca397ca9cbab9665958874ecc5154261f8b7@'
+                       'ec2-184-73-169-151.compute-1.amazonaws.com:5432/d4v8ok9mo8ptre')
 
 db = scoped_session(sessionmaker(bind=engine))
 
